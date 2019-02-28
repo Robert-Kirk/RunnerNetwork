@@ -1,6 +1,11 @@
 export class NavbarElement{
-    
-    name:string;
-    ref:string;
+
+    constructor(
+        public name:string, 
+        public ref:string
+        ){
+            this.name = name;
+            this.ref = ref;
+        }
 
 }

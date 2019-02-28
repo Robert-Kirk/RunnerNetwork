@@ -1,11 +1,19 @@
 <header class="header">
-  <h1>TodoList</h1>
   <nav>
     <!--
 
       TODO - Create area for flexible navbar
 
     -->
+    <div *ngFor="let navItem of naveItems"> 
+      <a routerLink="/"><button type="button" class="btn">{{navItem.name}}</button></a>
+    </div>
+    <div>
+      <app-ls-modal></app-ls-modal>
+    </div>
+    
+<!--
     <a routerLink="/"><button type="button" class="btn">Home</button></a> | <a routerLink="/about">About</a> | <a routerLink="/FAQ">FAQ</a> | <a routerLink="/sources">Sources</a> | <a routerLink="/contact">Contact</a> | <a routerLink="/about">About</a>
+    -->
   </nav>
 </header>

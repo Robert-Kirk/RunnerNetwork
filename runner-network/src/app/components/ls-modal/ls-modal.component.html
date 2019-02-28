@@ -1,0 +1,23 @@
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">Sign up | Login</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class = "row">
+      <div class = "col-lg-30">
+        <app-signup></app-signup>
+      </div>
+      <div class = "col-lg-30">
+        <app-login></app-login>
+      </div>
+    </div>>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+  </div>
+</ng-template>
+
+<button class="btn btn-outline-primary mb-2 mr-2" (click)="openWindowCustomClass(content)">Modal with window custom class</button>
