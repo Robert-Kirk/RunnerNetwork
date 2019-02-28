@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {User} from '../../models/User';
+import { Router } from '@angular/router';
+//import {User} from '../../models/User';
+//import {NgModel} from '';
 
 @Component({
   selector: 'app-signup',
@@ -8,13 +10,20 @@ import {User} from '../../models/User';
 })
 export class SignupComponent implements OnInit {
 
-  constructor() { }
+  username: string;
+  email: string;
+  password: string;
+  toConfirmPassword:string;
+
+  constructor(private router: Router) {
+      
+  }
 
   ngOnInit() {
   }
 
   handleSignup(){
-
+    //TODO -- Replace with API to signup for services.  
+    console.log(this.username + ", " + this.email + ", " + this.password + ", " + this.toConfirmPassword)
   }
-
 }

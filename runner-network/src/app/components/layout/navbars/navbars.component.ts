@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {NavbarElement} from '../../../models/NavBarElement';
+import {NavbarElement, BASICNAVELEMENTS} from '../../../models/NavBarElement';
 
 @Component({
   selector: 'app-navbars',
@@ -10,19 +10,14 @@ export class NavbarsComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {
+  basicNave = BASICNAVELEMENTS;
+  //TODO - Create method to get proper secondary elements
+  userElement: NavbarElement[] = [
+    new NavbarElement("Sign up / Login", "")
+  ]
 
-    let basicElements: NavbarElement[] = [
-      new NavbarElement("Home", "/"),
-      new NavbarElement("About", "/about"),
-      new NavbarElement("References", "/ref"),
-      new NavbarElement("Contact", "/contact")
-    ]
+  ngOnInit() {}
 
-    //TODO get element
-    let userElement: NavbarElement[] = [
-      new NavbarElement("Sign up / Login", "")
-    ]
-  }
+
 
 }

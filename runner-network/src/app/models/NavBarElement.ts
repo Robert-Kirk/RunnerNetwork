@@ -9,3 +9,10 @@ export class NavbarElement{
         }
 
 }
+
+export const BASICNAVELEMENTS: NavbarElement[]= [
+    new NavbarElement("home", "/"),
+    new NavbarElement("about", "/about"),
+    new NavbarElement("references", "/ref"),
+    new NavbarElement("contact", "/contact")
+  ]

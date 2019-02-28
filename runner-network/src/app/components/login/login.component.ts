@@ -6,14 +6,18 @@ import { Router } from '@angular/router';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent implements 
+OnInit {
 
+  loginId: string;
+  password: string;
   constructor(private router: Router) { }
 
   ngOnInit() {
   }
   handleLogin(){
-    this.router.navigate([])
+    //TODO -- Replace with API to signup for services.  
+    console.log(this.loginId + ", " + ", " + this.password + ", ")
   }
 
 }

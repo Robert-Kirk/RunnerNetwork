@@ -1,7 +1,7 @@
 <div>
   <div>
     <h2>Username: </h2>
-    <input type = "text" name="newUsername" [(ngModel)]="newUsername">
+    <input type = "text" name="username" [(ngModel)]="username">
   </div>
   <div>
     <h2>Email: </h2>
@@ -9,11 +9,11 @@
   </div>
   <div>
     <h2>Passowrd: </h2>
-    <input type = "newPassword" name="newPassword" [(ngModel)]="newPassword">
+    <input type = "newPassword" name="newPassword" [(ngModel)]="password">
   </div>
   <div>
   <h2>Confirm Passowrd: </h2>
     <input type = "toConfirmPassword" name="toConfirmPassword" [(ngModel)]="toConfirmPassword">
   </div>
-  <button (click)=handleSignup()>Login</button>
+  <button (click)=handleSignup()>Sign Up</button>
 </div>
